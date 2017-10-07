@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alan.flashcard.MainActivity">
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="57dp"
+
+        android:text="SUBMIT" />
+
+    <Button
+        android:id="@+id/btnGenerate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Generate 10 Random Problems"
+        android:layout_above="@+id/btnSubmit"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/txtUserInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:inputType="number"
+        android:hint=""
+        android:layout_alignBottom="@+id/btnSubmit"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtYourAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Answer:"
+        android:layout_alignBaseline="@+id/txtUserInput"
+        android:layout_alignBottom="@+id/txtUserInput"
+        android:layout_alignStart="@+id/btnGenerate" />
+
+    <TextView
+        android:id="@+id/txtDividend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnGenerate"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="99dp"
+        android:textSize="100sp"/>
+
+    <TextView
+        android:id="@+id/txtDivisor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtDividend"
+        android:layout_centerVertical="true"
+        android:textSize="100sp"/>
+
+    <TextView
+        android:id="@+id/txtDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="÷"
+        android:textSize="100sp"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/txtUserInput" />
+
+    <TextView
+        android:id="@+id/txtCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/btnGenerate"
+        android:layout_marginTop="57dp" />
+
+</android.widget.RelativeLayout>
